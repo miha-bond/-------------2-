@@ -27,8 +27,8 @@ padding: 0;
 
 /* Ограничивающая оболочка */
 .slick-list {
-  width: 968px;
-  height: 350px;
+  max-width: 1200px;
+
 
 }
 /* Лента слайдов */
@@ -64,7 +64,6 @@ margin-bottom: 16px;
   align-items: center;
   padding: 47px 109px 39px;
   margin-bottom: 16px;
-  width: 968px;
   background: #FAFAFA;
   font-family: 'DM Sans';
   font-style: normal;
@@ -81,7 +80,7 @@ margin-bottom: 16px;
 
 }
 
-.slider_decor-wraper{
+.slider__decor-wraper{
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
