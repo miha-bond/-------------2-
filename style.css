@@ -1,6 +1,12 @@
 /* Слайдер */
 .slick-slider{
-	display: block;
+	display: flex;
+	min-width: 0;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 
 }
 
@@ -9,19 +15,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-width: 0;
 }
 
 
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
-.slick-list {}
+.slick-list {
+  width: 968px;
+  height: 350px;
+
+}
 /* Лента слайдов */
 .slick-track{}
 /* Слайд */
-.slick-slide{}
+.slick-slide{
+}
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
 /* Слайд основной */
@@ -35,47 +43,54 @@
 
 /* Точки (булиты) */
 .slider .slick-dots{
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-width: 0;
 }
 .slider .slick-dots li{
-list-style: none;
-margin-right: 18px;
+  list-style: none;
+  margin-right: 18px;
 }
 
 .slider .slick-dots li:last-child{
-margin-right: 0;
+  margin-right: 0;
 
 }
 /* Элемент точки */
 .slider .slick-dots li button{
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #D9D9D9;
-    border: none;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  border: none;
 }
 /* Активная точка */
 .slider .slick-dots li.slick-active button{
-    background-color: red;
+  background-image: url("./imeges/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
 }
 
 
-.slider__text::before{
+/*.slider__text::before{
     left: 62px;
     bottom: 319px;
     content: "\275E";
     font-size: 160px;
     color: #E1E1E1;
-}
+}*/
 
 .slider__text {
+  display: flex;
+  align-items: center;
   padding: 47px 109px 39px;
+  width: 968px;
+  height: 138px;
   background: #FAFAFA;
-
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -84,15 +99,16 @@ margin-right: 0;
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
-
   text-decoration: underline;
   text-decoration-color: #E1E1E1;
   text-underline-offset: 5px;
+
+
 }
 
 .slider_decor-wraper{
-display: flex;
-justify-content: center
+  display: flex;
+  justify-content: center
 }
 
 .slider__decor-item {
