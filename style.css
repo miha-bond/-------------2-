@@ -59,13 +59,24 @@ ul, li, p, button{
     background: rebeccapurple;
     width: 94%;
     margin-bottom: 16px;
+
   }
 
+  .slider__text::before{
+    position: absolute;
+    top: -77px;
+    left: 38px;
+    content: " \275E";
+    font-size: 113px;
+    color: #E1E1E1;
+    opacity: .4;
+
+  }
   .slider__text {
     padding: 43px 58px 26px 65px;
     display: flex;
     align-items: center;
-
+    position: relative;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -75,19 +86,22 @@ ul, li, p, button{
     letter-spacing: 0.04em;
     color: #000000;
     text-decoration: underline;
+    text-decoration-style: 1px solid;
     text-decoration-color: #E1E1E1;
-    text-underline-offset: 5px;
-    z-index: 2;
-  }
-
-  .slider__text::before{
-    position: absolute;
-    content: url(./imeges/“.png);
-    width: 54px;
-    height: 40px;
-    z-index: 1;
+    text-underline-offset: 6px;
 
   }
+  /*.sliter__text::after {
+      width: calc(100% - 100px);
+      background: repeating-linear-gradient(#e1e1e1 1px,rgba(0,0,0,0) 3px,rgba(0,0,0,0) 31px);
+      margin: 0 auto;
+      position: absolute;
+      top: 74px;
+      bottom: 0;
+      left: 50px;
+      right: 50px;
+  }*/
+
   .slider__decor-wraper{
     display: flex;
     justify-content: center;
