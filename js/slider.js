@@ -3,8 +3,9 @@ $('.slider').slick({
   slidesToScroll: 1,
   autoplay: true,
   adaptiveHeight: true,
-  autoplaySpeed: 4500,
+  autoplaySpeed: 4500000,
   arrows:false,
   dots:true,
-  centerMode:true,
+  centerMode:false,
+
 });

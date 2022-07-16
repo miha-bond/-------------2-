@@ -41,42 +41,31 @@ ul, li, p, button{
 }
 
 
-
-  /*.slider{
-    content: "";
-    background-image: url(./imeges/“.png) ;
-    width: 54px;
-    height: 40px;
-    z-index: 20;
-
-  }*/
   .slider__imeg{
   margin-bottom: 16px;
   }
 
 
   .slider__text-wraper{
-    background: #FAFAFA;;
-    width: 94%;
-    margin-bottom: 16px;
-
+    background: rebeccapurple;
+    min-width: 280px;
+    margin:0 20px 16px 20px;
+    position: relative;
+    border-radius: 20px;
   }
 
   .slider__text::before{
     position: absolute;
-    top: -77px;
-    left: 38px;
-    content: " \275E";
-    font-size: 113px;
-    color: #E1E1E1;
+    top: 19px;
+    left: 31px;
+    content: url(./imeges/lap.svg);
     opacity: .4;
-
   }
   .slider__text {
+    position: relative;
     padding: 43px 58px 26px 65px;
     display: flex;
     align-items: center;
-    position: relative;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -85,30 +74,25 @@ ul, li, p, button{
     text-align: center;
     letter-spacing: 0.04em;
     color: #000000;
-    text-decoration: underline;
-    text-decoration-style: 1px solid;
-    text-decoration-color: #E1E1E1;
-    text-underline-offset: 6px;
-
   }
-  /*.sliter__text::after {
-      width: calc(100% - 100px);
-      background: repeating-linear-gradient(#e1e1e1 1px,rgba(0,0,0,0) 3px,rgba(0,0,0,0) 31px);
-      margin: 0 auto;
-      position: absolute;
-      top: 74px;
-      bottom: 0;
-      left: 50px;
-      right: 50px;
-  }*/
 
-  .slider__decor-wraper{
+  .slider__decoration-text {
+    width: calc(100% - 100px);
+    background: repeating-linear-gradient(#e1e1e1 1px,#00000000 3px,#00000000 32px);
+    margin: 0 auto;
+    position: absolute;
+    top: 66px;
+    bottom: 15px;
+    left: 36px;
+    right: 33px;
+  }
+  .slider__decoration-wraper{
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
   }
 
-  .slider__decor-item {
+  .slider__decoration-item {
     margin-right: 10px;
     content: "";
     width: 4px;
@@ -116,7 +100,7 @@ ul, li, p, button{
     border-radius: 50%;
     background: #C7133E;
   }
-  .slider__decor-item:last-child{
+  .slider__decoration-item:last-child{
     margin-right: 0;
   }
 
