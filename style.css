@@ -46,12 +46,30 @@ ul, li, p, button{
   }
 
 
-  .slider__text-wraper{
-    background: rebeccapurple;
-    min-width: 280px;
-    margin:0 20px 16px 20px;
-    position: relative;
-    border-radius: 20px;
+    .slider__text-wraper{
+      background: rebeccapurple;
+      min-width: 280px;
+      margin:0 20px 16px 20px;
+      position: relative;
+      border-radius: 20px;
+    }
+
+  @media screen and (min-width:768px) {
+    .slider__text-wraper{
+      background: red;
+      min-width: 280px;
+      margin:0 74px 4px 74px;
+      position: relative;
+      border-radius: 20px;
+    }}
+    @media screen and (min-width:1200px) {
+      .slider__text-wraper{
+        background: yellowgreen;
+        min-width: 280px;
+        margin:0 116px 16px 116px;
+        position: relative;
+        border-radius: 20px;
+      }
   }
 
   .slider__text::before{
