@@ -3,7 +3,9 @@ ul, li, p, button{
   padding: 0;
   }
 
+  .animal-wraper{
 
+  }
   /* Слайдер */
   .slick-slider{
     display: flex;
